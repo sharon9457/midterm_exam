@@ -1,16 +1,44 @@
-
-public class Q01_InventoryItem {
+ public class Q01_InventoryItem {
 private final String id;
 private final String name;
 private int stock;
 public Q01_InventoryItem(String id, String name, int stock){
+    this.id = id;
+    this.name = name;
+    this.stock = Math()
+
+    if(id ==null ||id.trim().isEmpty()){
+        throw new IllegalArgumentException("Is isEmpty!");
+    }
+    if(name ==null ||name.trim().isEmpty()){
+        throw new IllegalArgumentException("Is isEmpty!");
+    }
+    
 
 }
-public String getId(){}
- 
-public String getName()
-public int getStock()
-public boolean restock(int amount)
-public boolean sell(int amount)
+public String getId(){
+    return id;
+
+}
+public String getName(){
+    return name;
+
+}
+public int getStock(){
+    return stock;
+
+}
+public boolean restock(int amount){
+    if(amount >0){
+        return ;
+    }
+    else{
+        return false;
+    }
+}
+public boolean sell(int amount){
+    if()
+}
 public String status()
+} 
 }
