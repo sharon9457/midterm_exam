@@ -1,4 +1,4 @@
- public class Q01_InventoryItem {
+public class Q01_InventoryItem {
 private final String id;
 private final String name;
 private int stock;
@@ -48,8 +48,14 @@ public String status(){
     return "編號:"+this.id+"商品名稱"+this.name+"庫存"+this.stock;
 }
 public static void main(String[] args) {
-    Q01_InventoryItem item = new Q01_InventoryItem("001","掛軸","-10");
+    Q01_InventoryItem item = new Q01_InventoryItem("001","掛軸",-10);
 
-}
-} 
+    System.out.println(item.status());
+    item.restock(20);
+    System.out.println(item.status());
+    item.sell(10);
+    System.out.println(item.status());
+
+}}
+
 
