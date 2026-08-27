@@ -5,15 +5,14 @@ private int stock;
 public Q01_InventoryItem(String id, String name, int stock){
     this.id = id;
     this.name = name;
-    this.stock = Math()
+    this.stock = Math.max(0, stock);
 
     if(id ==null ||id.trim().isEmpty()){
         throw new IllegalArgumentException("Is isEmpty!");
     }
     if(name ==null ||name.trim().isEmpty()){
         throw new IllegalArgumentException("Is isEmpty!");
-    }
-    
+    }    
 
 }
 public String getId(){
@@ -30,14 +29,20 @@ public int getStock(){
 }
 public boolean restock(int amount){
     if(amount >0){
-        return ;
+        this.stock+=amount ;
+        return true;
     }
     else{
         return false;
     }
 }
 public boolean sell(int amount){
-    if()
+    if(amount>0 && ){
+        this.stock-=amount;
+        return true;
+    }else{
+        return false;
+    }
 }
 public String status()
 } 
