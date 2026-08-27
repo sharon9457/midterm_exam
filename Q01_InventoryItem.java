@@ -37,13 +37,19 @@ public boolean restock(int amount){
     }
 }
 public boolean sell(int amount){
-    if(amount>0 && ){
+    if(amount>0 && this.stock >=amount){
         this.stock-=amount;
         return true;
     }else{
         return false;
     }
 }
-public String status()
-} 
+public String status(){
+    return "編號:"+this.id+"商品名稱"+this.name+"庫存"+this.stock;
 }
+public static void main(String[] args) {
+    Q01_InventoryItem item = new Q01_InventoryItem("001","掛軸","-10");
+
+}
+} 
+
