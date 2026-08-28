@@ -71,11 +71,11 @@ public java.util.Map<String, Integer> summary(){
     return result;
 }public static void main(String[] args) {
     Q06_EnrollmentIndex index = new Q06_EnrollmentIndex();
-    index.enroll("MIS", "001");
-    index.enroll("MIS", "001");
-    index.enroll("資料結構","001");
-    System.out.println(index.studentsOf("MIS"));
-    System.out.println(index.coursesOf("001"));
-    System.out.println(index.summary());
+index.enroll("DS", "S02");
+index.enroll("DS", "S01");
+index.enroll("JAVA", "S01");
+System.out.println(index.studentsOf("DS"));
+System.out.println(index.coursesOf("S01"));
+System.out.println(index.summary());
 }
 }

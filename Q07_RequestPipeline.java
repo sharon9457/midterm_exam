@@ -61,14 +61,12 @@ public static java.util.List<String> process(String[] commands){
         return result;
     }
     public static void main(String[] args){
-        String[] command = {
-            "NORMAL N1",
-            "PROCESS",
-            "NORMAL N2"
-        };
-        System.out.println(Q07_RequestPipeline.isBalanced("a{b[c]9(d)}"));
-        System.out.println(Q07_RequestPipeline.isBalanced("([)]"));
-        System.out.println(Q07_RequestPipeline.process(command));
+        String[] commands = {
+"NORMAL N1", "URGENT U1", "NORMAL N2", "PROCESS", "PROCESS", "PROCESS"
+};
+System.out.println(Q07_RequestPipeline.isBalanced("a{b[c](d)}"));
+System.out.println(Q07_RequestPipeline.isBalanced("([)]"));
+System.out.println(Q07_RequestPipeline.process(commands));
     }}
     
 

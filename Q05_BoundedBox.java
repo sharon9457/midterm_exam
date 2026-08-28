@@ -65,14 +65,15 @@ public T maximum(){
         }
 
         public static void main(String[] args) {
-                Q05_BoundedBox<Integer>box = new Q05_BoundedBox<>(10);
-                System.out.println(box.add(50));
-                System.out.println(box.add(100));
-                System.out.println(box.add(75));
-                System.out.println(box.minimum());
-                System.out.println(box.maximum());
-                System.out.println(box.countGreaterThan(25));
-                System.out.println(box.snapshot());
+                Q05_BoundedBox<Integer> box = new Q05_BoundedBox<>(3);
+System.out.println(box.add(40));
+System.out.println(box.add(10));
+System.out.println(box.add(30));
+System.out.println(box.add(20));
+System.out.println(box.minimum());
+System.out.println(box.maximum());
+System.out.println(box.countGreaterThan(25));
+System.out.println(box.snapshot());
         }}
 
 

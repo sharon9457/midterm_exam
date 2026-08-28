@@ -66,12 +66,12 @@ public static int totalPayroll(java.util.List<Employee> employees){
 }
 public static void main(String[] args){
     var employees = java.util.List.of(
-        new Q03_EmployeePayroll.SalariedEmployee("001","Kai",100000),
-        new Q03_EmployeePayroll.HourlyEmployee("002", "Chita",200,200 )
-    );
-    System.out.println(employees.get(0).summary());
-    System.out.println(employees.get(1).summary());
-    System.out.println(Q03_EmployeePayroll.totalPayroll(employees));
+new Q03_EmployeePayroll.SalariedEmployee("E1", "Amy", 50000),
+new Q03_EmployeePayroll.HourlyEmployee("E2", "Bo", 170, 200)
+);
+System.out.println(employees.get(0).summary());
+System.out.println(employees.get(1).summary());
+System.out.println(Q03_EmployeePayroll.totalPayroll(employees));
     
 
 }

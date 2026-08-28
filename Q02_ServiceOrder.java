@@ -79,14 +79,13 @@ public List<String> itemSummaries(){
     return Collections.unmodifiableList(summaries);
 }
 public static void main(String[] args){
-    Q02_ServiceOrder order = new Q02_ServiceOrder("001");
-    order.addItem("清潔", 500, 5);
-    order.addItem("檢查", 100, 10);
-    order.addItem("修理", 1000, 20);
-
-    System.out.println(order.itemCount());
-    System.out.println(order.totalAmount());
-    System.out.println(order.largestItemName());
-    System.out.println(order.itemSummaries());
+    Q02_ServiceOrder order = new Q02_ServiceOrder("R-01");
+order.addItem("Inspection", 300, 1);
+order.addItem("Cable", 80, 4);
+order.addItem("Cleaning", 200, 1);
+System.out.println(order.itemCount());
+System.out.println(order.totalAmount());
+System.out.println(order.largestItemName());
+System.out.println(order.itemSummaries());
 }
 }

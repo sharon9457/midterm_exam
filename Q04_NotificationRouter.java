@@ -53,14 +53,12 @@ for(Channel channel:channels){
 return results;
 }
 public static void main(String[] args){
-    var channels = List.of(
-        new Q04_NotificationRouter.EmailChannel(),
-        new Q04_NotificationRouter.SmsChannel()
-    );
-    System.out.println(Q04_NotificationRouter.route(channels,"@gmail.com","Hello"));
-    System.out.println(Q04_NotificationRouter.route(channels,"412222333","word!!"));
-    System.out.println(Q04_NotificationRouter.route(channels,"a@b.com","Hello"));
-    System.out.println(Q04_NotificationRouter.route(channels,"412-222-333","word!!"));
+    var channels = java.util.List.of(
+new Q04_NotificationRouter.EmailChannel(),
+new Q04_NotificationRouter.SmsChannel()
+);
+System.out.println(Q04_NotificationRouter.route(channels, "a@b.com", "Ready"));
+System.out.println(Q04_NotificationRouter.route(channels, "0912-345-678", "Go"));
 
 }}
 

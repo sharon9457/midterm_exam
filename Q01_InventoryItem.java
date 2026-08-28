@@ -48,14 +48,11 @@ public String status(){
     return "編號:"+this.id+"商品名稱"+this.name+"庫存"+this.stock;
 }
 public static void main(String[] args) {
-    Q01_InventoryItem item = new Q01_InventoryItem("001","掛軸",-10);
-
-    System.out.println(item.status());
-    item.restock(20);
-    System.out.println(item.status());
-    item.sell(10);
-    System.out.println(item.status());
-
+    Q01_InventoryItem item = new Q01_InventoryItem(" P100 ", " Keyboard ", 5);
+System.out.println(item.restock(3));
+System.out.println(item.sell(6));
+System.out.println(item.sell(3));
+System.out.println(item.status());
 }}
 
 
